@@ -62,5 +62,9 @@ with open("odd.txt", "r") as odd_file:
         print("*"*5)
         print(line.strip())
 
+#outro
+print(border)
+time.sleep(2)
+print(Fore.CYAN+pyfiglet.figlet_format("THANK YOU",font="isometric1"))
 
 
