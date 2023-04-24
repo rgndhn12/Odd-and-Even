@@ -5,13 +5,14 @@ with open("numbers.txt", "r") as integers_file, open ("even.txt", "a") as even_f
 #read numbers.txt
     for line in integers_file:
         print(line.strip())
+        integers_file = int(line)
         
 #if the number is even
         if integers_file % 2 != 1:
-        
 
 #   write it in even.txt
+            even_file.write(str(integers_file) +"\n")
 #if the number is odd
-        else:
+        
 #   write it in odd.txt
 
