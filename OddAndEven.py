@@ -1,9 +1,5 @@
 #Dahan, Regine Fae M. Dahan BSCPE 1-5 File Handling No.1
 
-#introduction
-import pyfiglet
-import time
-
 #open numbers.txt
 with open("numbers.txt", "r") as integers_file, open ("even.txt", "a") as even_file, open("odd.txt", "a") as odd_file:
 
@@ -30,5 +26,12 @@ with open ("even.txt", "r") as even_file:
     for line in even_file:
         print("*"*5)
         print(line.strip())
+
+#display the odd integers
+with open("odd.txt", "r") as odd_file:
+    for line in odd_file:
+        print("*"*5)
+        print(line.strip())
+
 
 
